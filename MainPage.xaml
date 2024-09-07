@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DiceRoller.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            HorizontalOptions="Center">
+            
+            <Label
+                Text="Rolador de Dados"
+                FontSize="Header"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                
+                />
+
+            <Label
+                Text="6"
+                HorizontalTextAlignment="Center"
+                FontSize="Header"
+                />
+
+            <Picker
+                x:Name="PickerNumeros"
+                Title="selecione o numero"
+                HorizontalOptions="Center"
+                >
+
+                <Picker.Items>
+                    
+                    <x:String>6</x:String>
+                    <x:String>8</x:String>
+                    <x:String>10</x:String>
+                    <x:String>12</x:String>
+                    <x:String>20</x:String>
+                    <x:String>100</x:String>
+
+
+
+
+                </Picker.Items>
+
+            </Picker>
+
+            <Button
+                x:Name="botao"
+                Text="rolar o dado"
+                Background="Gray"
+                Clicked="botaoClicked"
+                
+                
+                
+                />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
